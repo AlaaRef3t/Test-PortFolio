@@ -149,6 +149,11 @@ section {
 }
 
 /*Header-content*/
+
+/* header .contact-icons .contact-icon i{
+  padding: 10px 5px;
+  font-size: 25px;
+} */
 .header-content {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -558,12 +563,13 @@ section {
   align-items: center;
   font-size: 1.3rem;
 }
-.contact-content-con .left-contact .contact-icon {
+ .contact-icon {
   display: flex;
   margin-top: 2rem;
 }
-.contact-content-con .left-contact .contact-icon a {
+ .contact-icon a {
   display: flex;
+  flex-direction: row;
   align-items: center;
   color: var(--color-white);
   background-color: var(--color-grey-5);
@@ -575,13 +581,13 @@ section {
   margin: 0 0.4rem;
   transition: all 0.4s ease-in-out;
 }
-.contact-content-con .left-contact .contact-icon a:hover {
+ .contact-icon a:hover {
   background-color: var(--color-secondary);
 }
-.contact-content-con .left-contact .contact-icon a:hover i {
+ .contact-icon a:hover i {
   color: var(--color-primary);
 }
-.contact-content-con .left-contact .contact-icon a i {
+ .contact-icon a i {
   display: flex;
   align-items: center;
   justify-content: center;
